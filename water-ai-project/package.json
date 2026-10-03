@@ -1,0 +1,26 @@
+{
+  "name": "water-ai",
+  "productName": "Water AI",
+  "version": "1.0.0",
+  "description": "Water AI desktop app",
+  "main": "main.js",
+  "scripts": {
+    "dist": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^39.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.waterai.app",
+    "productName": "Water AI",
+    "files": ["index.html", "main.js"],
+    "win": {
+      "target": ["nsis", "portable"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
