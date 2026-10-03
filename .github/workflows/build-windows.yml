@@ -6,9 +6,11 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+
     defaults:
-     run:
-      working-directory: water-ai-project
+      run:
+        working-directory: water-ai-project
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -16,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22     
+          node-version: 22
 
       - name: Install dependencies
         run: npm install
@@ -28,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Water-AI-Windows
-          path: dist/*
+          path: water-ai-project/dist/*
