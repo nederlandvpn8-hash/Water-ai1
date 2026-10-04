@@ -16,7 +16,7 @@
     "productName": "Water AI",
     "files": ["index.html", "main.js"],
     "win": {
-      "target": ["nsis", "portable"]
+      "target": ["nsis", "portable"],
       "icon": "icon.ico"
     },
     "nsis": {
