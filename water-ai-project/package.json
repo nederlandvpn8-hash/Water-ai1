@@ -17,6 +17,7 @@
     "files": ["index.html", "main.js"],
     "win": {
       "target": ["nsis", "portable"]
+      "icon": "icon.ico"
     },
     "nsis": {
       "oneClick": false,
